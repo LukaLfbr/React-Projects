@@ -1,4 +1,3 @@
-// AddPostForm.jsx
 import React, { useState } from "react";
 
 const AddPostForm = ({ dispatch }) => {

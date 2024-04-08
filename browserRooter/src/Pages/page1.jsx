@@ -1,9 +1,14 @@
 import React from "react";
 
-const Page1 = () => {
+const Page1 = ({ posts }) => {
   return (
     <div>
-      <p>Ici sur page 1</p>
+      <p>Ici sur Home</p>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}> {post.title} </li>
+        ))}
+      </ul>
     </div>
   );
 };

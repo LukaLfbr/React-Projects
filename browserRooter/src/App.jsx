@@ -4,7 +4,7 @@ import "./App.css";
 import { NavLink, Routes, Route, Link } from "react-router-dom";
 import Page1 from "./Pages/page1";
 import Page2 from "./Pages/page2";
-import AddPostForm from "./Component/PostsForm";
+import AddPostForm from "./components/PostsForm";
 import { useReducer } from "react";
 
 const initialState = {
@@ -54,9 +54,12 @@ function App() {
       </NavLink>
 
       <Routes>
-        <Route path={"/"} element={<Page1 />} />
+        <Route path={"/"} element={<Page1 posts={state.posts} />} />
         <Route path={"/page2"} element={<Page2 />} />
-        <Route path={"/addPost"} element={<AddPostForm />} />
+        <Route
+          path={"/addPost"}
+          element={<AddPostForm dispatch={dispatch} />}
+        />
       </Routes>
     </>
   );

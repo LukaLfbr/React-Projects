@@ -3,7 +3,7 @@ import React from "react";
 const Page2 = () => {
   return (
     <div>
-      <p>Ici sur parge 2</p>
+      <p>Ici sur page 2</p>
     </div>
   );
 };

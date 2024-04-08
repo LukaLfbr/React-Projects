@@ -7,7 +7,7 @@ const AddPostForm = ({ dispatch }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch({
-      type: "ADD_POST",
+      type: "Add_Post",
       payload: {
         id: Date.now(),
         title,

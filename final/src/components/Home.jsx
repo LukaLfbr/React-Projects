@@ -5,7 +5,7 @@ import { fetchPosts } from "../store/slices/postsSlice";
 
 const Home = () => {
   const dispatch = useDispatch();
-  const posts = useSelector((state) => state.posts.posts);
+  const posts = useSelector((state) => state.posts.posts); //probleme sur l'ajout 🔴🔴🔴🔴🔴🔴🔴🔴
 
   useEffect(() => {
     dispatch(fetchPosts());
